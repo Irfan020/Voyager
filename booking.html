@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyagers</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">Voyagers.com</a>
+        <ul>
+        <li><a href="teams.html">Our Teams</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="booking.html">Book A Trip</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    <div class="toggle"></div>
+    </nav>
+
+    <section id="id4">
+
+      <div class="container">
+        <div class="title">BOOK A TRIP</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Desired Departure Time</span>
+                <input type="date">
+              </div>
+              <div class="input-box">
+                <span class="details">Milky way ID</span>
+                <input type="text">
+              </div>
+              <div class="input-box">
+                <span class="details">Route</span>
+                <input type="number">
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="tel">
+              </div>
+              <div class="input-box">
+                <span class="details">Card No</span>
+                <input type="text">
+              </div>
+              <div class="input-box">
+                <span class="details">Confirm Pin</span>
+                <input type="password">
+              </div>
+            </div>
+            <div class="team-details">
+              <input type="radio" name="team" id="dot-1">
+              <input type="radio" name="team" id="dot-2">
+              <input type="radio" name="team" id="dot-3">
+              <span class="team-title">Select Team</span>
+              <div class="category">
+                <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="team">Gurdian of the galaxy</span>
+              </label>
+              <label for="dot-2">
+                <span class="dot two"></span>
+                <span class="team">Star Trek</span>
+              </label>
+              <label for="dot-3">
+                <span class="dot three"></span>
+                <span class="team">Rouge One</span>
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Confirm Booking">
+            </div>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+    <div class="container2">
+      <input type="search" oninput="filter_table(this, 'table_filter')" class="form_control" placeholder="&#128270;">
+      <table class="_table table_sort">
+        <thead class="bgclrtbl">
+          <tr>
+            <th width="90px">Route</th>
+            <th>Details</th>
+            <th>Schedule</th>
+            <th>Team</th>
+            <th width="100px">Review</th>
+          </tr>
+        </thead>
+        <tbody id="table_filter">
+          <tr>
+            <td>1</td>
+            <td>Earth-Asgard-NoWhere-Titan-Earth</td>
+            <td>1st Sunday/month GMT+8</td>
+            <td>Gurdian of the Galaxy</td>
+            <td>
+             &#9733;&#9733;&#9733;&#9733;&#9733;
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Earth-Vulcan-Andoria-Nibiru-Earth</td>
+            <td>2nd Sunday/month GMT+8</td>
+            <td>Star Trek</td>
+            <td>
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Earth-Bogano-Castilon-Ilum-Earth</td>
+            <td>3rd Sunday/month GMT+8</td>
+            <td>Rouge One</td>
+            <td>
+             &#9733;&#9733;&#9733;&#9733;&#9733;
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer-bottom">
+      &copy; all rights reserved to Morshed Irfan
+    </div>
+    <script src="js/table.js"></script>
+</body>
+</html>
